@@ -14,16 +14,31 @@
 <meta name="author" content="John Doe" />
 
 
-    
-    
 
-
-<meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://yoursite.com/index.html">
+<meta name="description" content="Hexo 图片路径问题
+1.本地资源方式资源（Asset）代表 source 文件夹中除了文章以外的所有文件，例如图片、CSS、JS 文件等。Hexo 提供了一种更方便管理 Asset 的设定：post_asset_folder。
+post_asset_folder: true当您设置 post_asset_folder 参数后，在建立文件时，Hexo 会自动建立一个与文章同名的文件夹，您可以把与">
+<meta property="og:type" content="article">
+<meta property="og:title" content="hexo图片存储">
+<meta property="og:url" content="http://yoursite.com/2016/07/21/hexo-image/index.html">
 <meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="Hexo 图片路径问题
+1.本地资源方式资源（Asset）代表 source 文件夹中除了文章以外的所有文件，例如图片、CSS、JS 文件等。Hexo 提供了一种更方便管理 Asset 的设定：post_asset_folder。
+post_asset_folder: true当您设置 post_asset_folder 参数后，在建立文件时，Hexo 会自动建立一个与文章同名的文件夹，您可以把与">
+<meta property="og:image" content="http://7xwmqr.com1.z0.glb.clouddn.com/hexo-7n1.png">
+<meta property="og:image" content="http://7xwmqr.com1.z0.glb.clouddn.com/hexo-7n2.png">
+<meta property="og:image" content="http://7xwmqr.com1.z0.glb.clouddn.com/hexo-7n3.png">
+<meta property="og:image" content="http://7xwmqr.com1.z0.glb.clouddn.com/7n4.png">
+<meta property="og:image" content="http://7xwmqr.com1.z0.glb.clouddn.com/7n5.png">
+<meta property="og:image" content="http://7xwmqr.com1.z0.glb.clouddn.com/7n6.png">
+<meta property="og:image" content="http://7xwmqr.com1.z0.glb.clouddn.com/7n7.png">
+<meta property="og:updated_time" content="2016-07-22T03:24:23.152Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hexo">
+<meta name="twitter:title" content="hexo图片存储">
+<meta name="twitter:description" content="Hexo 图片路径问题
+1.本地资源方式资源（Asset）代表 source 文件夹中除了文章以外的所有文件，例如图片、CSS、JS 文件等。Hexo 提供了一种更方便管理 Asset 的设定：post_asset_folder。
+post_asset_folder: true当您设置 post_asset_folder 参数后，在建立文件时，Hexo 会自动建立一个与文章同名的文件夹，您可以把与">
+<meta name="twitter:image" content="http://7xwmqr.com1.z0.glb.clouddn.com/hexo-7n1.png">
 
 <link rel="apple-touch-icon" href= "/apple-touch-icon.png">
 
@@ -51,13 +66,11 @@
 <link rel="stylesheet" href="/css/style.css">
 
 
-    <style> .article { opacity: 0;} </style>
-
 
 <link href="//cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
 
 
-<title>Hexo</title>
+<title>hexo图片存储 | Hexo</title>
 
 <script src="//cdn.bootcss.com/jquery/2.2.4/jquery.min.js"></script>
 <script src="//cdn.bootcss.com/clipboard.js/1.5.10/clipboard.min.js"></script>
@@ -66,8 +79,8 @@
     var yiliaConfig = {
         fancybox: true,
         animate: true,
-        isHome: true,
-        isPost: false,
+        isHome: false,
+        isPost: true,
         isArchive: false,
         isTag: false,
         isCategory: false,
@@ -257,152 +270,7 @@
     </div>
     <link class="menu-list" tags="Tags" friends="Friends" about="About Me"/>
 </nav>
-      <div class="body-wrap">
-  
-    <article id="post-window10-crash" class="article article-type-post" itemscope itemprop="blogPost">
-  
-    <div class="article-meta">
-      <a href="/2016/07/22/window10-crash/" class="article-date">
-      <time datetime="2016-07-22T03:23:54.000Z" itemprop="datePublished">2016-07-22</time>
-</a>
-
-
-    </div>
-  
-  <div class="article-inner">
-    
-      <input type="hidden" class="isFancy" />
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2016/07/22/window10-crash/">window10经常崩溃的问题</a>
-    </h1>
-  
-
-      </header>
-      
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-          
-        <h1 id="window10经常崩溃的问题"><a href="#window10经常崩溃的问题" class="headerlink" title="window10经常崩溃的问题"></a>window10经常崩溃的问题</h1><hr>
-<p>公司的电脑不小心升级了window10，用了几个月，除了发现在web开发时，80端口被window10占用外，也没啥问题。但这几天，不知道是装了什么不兼容软件，还是window10自己更新的问题，每天早晨开机，window10资源管理器都莫名其妙的崩溃，按网上的说法，更新了最新的驱动程序（声卡 显卡 主板等等），删除了最近安装的软件，甚至以前安装的软件，还是不行，重启几次，莫名奇妙又好了，但第二天开机，同样的问题又发生了，之后又baidu了一下，解决问题过程如下：</p>
-<h2 id="1、先杀毒（我的电脑没问题，排除）"><a href="#1、先杀毒（我的电脑没问题，排除）" class="headerlink" title="1、先杀毒（我的电脑没问题，排除）"></a>1、先杀毒（我的电脑没问题，排除）</h2><h2 id="2、更新电脑驱动程序，我用的360驱动大师（都更新了，依旧崩溃，排除）"><a href="#2、更新电脑驱动程序，我用的360驱动大师（都更新了，依旧崩溃，排除）" class="headerlink" title="2、更新电脑驱动程序，我用的360驱动大师（都更新了，依旧崩溃，排除）"></a>2、更新电脑驱动程序，我用的360驱动大师（都更新了，依旧崩溃，排除）</h2><h2 id="3、卸载最近安装的软件，逐一排除软件冲突（最近的软件都卸载了，还是崩溃，排除此法）"><a href="#3、卸载最近安装的软件，逐一排除软件冲突（最近的软件都卸载了，还是崩溃，排除此法）" class="headerlink" title="3、卸载最近安装的软件，逐一排除软件冲突（最近的软件都卸载了，还是崩溃，排除此法）"></a>3、卸载最近安装的软件，逐一排除软件冲突（最近的软件都卸载了，还是崩溃，排除此法）</h2><h2 id="4、这个是最终解决我的window10崩溃的方法："><a href="#4、这个是最终解决我的window10崩溃的方法：" class="headerlink" title="4、这个是最终解决我的window10崩溃的方法："></a>4、这个是最终解决我的window10崩溃的方法：</h2><blockquote>
-<ul>
-<li><p>快捷键win+r,输入cmd<br><img src="http://7xwmqr.com1.z0.glb.clouddn.com/cm.png" alt=""></p>
-</li>
-<li><p>回车，打开window命令行界面,之后会用到<br><img src="http://7xwmqr.com1.z0.glb.clouddn.com/order.png" alt=""></p>
-</li>
-<li><p>再打开任务管理器（快捷键Ctrl+Alt+Delete），“进程”下面的“windows资源管理器”右键选择重新启动，记录发生的时间</p>
-</li>
-<li><p>鼠标右键点击“我的电脑”，选”管理“”</p>
-</li>
-<li><p>管理工具-事件查看器，看“应用程序”和“系统”这两项对应的故障点<br><img src="http://7xwmqr.com1.z0.glb.clouddn.com/overlay.png" alt=""></p>
-</li>
-<li><p>从报错的信息查看到是explorer.exe引用了该DLL。可以先干掉引用该DLL的进程，然后再删除。所以先在任务管理器杀explorer.exe进程<br><img src="http://7xwmqr.com1.z0.glb.clouddn.com/explorer.png" alt=""></p>
-</li>
-<li><p>在命令控制台（cd C:\Users\gln\AppData\Roaming, (ps:gln是我的电脑用户名，相应替换成你自己的电脑用户名)<br><img src="http://7xwmqr.com1.z0.glb.clouddn.com/roaming.png" alt=""></p>
-</li>
-<li><p>执行命令del overlayicon64.dll 删除该文件<br><img src="http://7xwmqr.com1.z0.glb.clouddn.com/delover.png" alt=""></p>
-</li>
-<li><p>重启系统，window10就不崩溃了。</p>
-</li>
-</ul>
-</blockquote>
-
-      
-    </div>
-    
-    <div class="article-info article-info-index">
-      
-      
-
-      
-    <div class="article-tag tagcloud">
-        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Window10/">Window10</a></li></ul>
-    </div>
-
-      
-      <div class="clearfix"></div>
-    </div>
-    
-  </div>
-  
-</article>
-
-
-
-
-
-
-
-
-
-  
-    <article id="post-hexo-theme" class="article article-type-post" itemscope itemprop="blogPost">
-  
-    <div class="article-meta">
-      <a href="/2016/07/21/hexo-theme/" class="article-date">
-      <time datetime="2016-07-21T10:21:41.000Z" itemprop="datePublished">2016-07-21</time>
-</a>
-
-
-    </div>
-  
-  <div class="article-inner">
-    
-      <input type="hidden" class="isFancy" />
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2016/07/21/hexo-theme/">hexo官网地址</a>
-    </h1>
-  
-
-      </header>
-      
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-          
-        <h2 id="hexo官网地址"><a href="#hexo官网地址" class="headerlink" title="hexo官网地址"></a>hexo官网地址</h2><p><a href="https://hexo.io/" target="_blank" rel="external">https://hexo.io/</a></p>
-
-      
-    </div>
-    
-    <div class="article-info article-info-index">
-      
-      
-
-      
-    <div class="article-tag tagcloud">
-        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Hexo/">Hexo</a></li></ul>
-    </div>
-
-      
-      <div class="clearfix"></div>
-    </div>
-    
-  </div>
-  
-</article>
-
-
-
-
-
-
-
-
-
-  
-    <article id="post-hexo-image" class="article article-type-post" itemscope itemprop="blogPost">
+      <div class="body-wrap"><article id="post-hexo-image" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
       <a href="/2016/07/21/hexo-image/" class="article-date">
@@ -420,12 +288,23 @@
       <header class="article-header">
         
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2016/07/21/hexo-image/">hexo图片存储</a>
+    <h1 class="article-title" itemprop="name">
+      hexo图片存储
     </h1>
   
 
       </header>
+      
+      <div class="article-info article-info-post">
+        
+
+        
+    <div class="article-tag tagcloud">
+        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Hexo/">Hexo</a></li></ul>
+    </div>
+
+        <div class="clearfix"></div>
+      </div>
       
     
     <div class="article-entry" itemprop="articleBody">
@@ -443,168 +322,91 @@
       
     </div>
     
-    <div class="article-info article-info-index">
-      
-      
-
-      
-    <div class="article-tag tagcloud">
-        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Hexo/">Hexo</a></li></ul>
-    </div>
-
-      
-      <div class="clearfix"></div>
-    </div>
-    
   </div>
   
-</article>
-
-
-
-
-
-
-
-
-
-  
-    <article id="post-git-atom" class="article article-type-post" itemscope itemprop="blogPost">
-  
-    <div class="article-meta">
-      <a href="/2016/07/21/git-atom/" class="article-date">
-      <time datetime="2016-07-21T09:35:47.000Z" itemprop="datePublished">2016-07-21</time>
-</a>
-
-
+    
+    <div class="copyright">
+        <p><span>Title:</span><a href="/2016/07/21/hexo-image/">hexo图片存储</a></p>
+        <p><span>Author:</span><a href="/" title="Back to Homepage">John Doe</a></p>
+        <p><span>Created:</span>2016-07-21, 18:00:32</p>
+        <p><span>Updated:</span>2016-07-22, 11:24:23</p>
+        <p>
+            <span>Full URL:</span><a class="post-url" href="/2016/07/21/hexo-image/" title="hexo图片存储">http://yoursite.com/2016/07/21/hexo-image/</a>
+            <span class="copy-path" data-clipboard-text="From http://yoursite.com/2016/07/21/hexo-image/　　By John Doe" title="Copy Article&#39;s Link &amp; Author"><i class="fa fa-clipboard"></i></span>
+            <script> var clipboard = new Clipboard('.copy-path'); </script>
+        </p>
+        <p>
+            <span>License:</span><i class="fa fa-creative-commons"></i> <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" title="CC BY-NC-SA 4.0 International" target = "_blank">"CC BY-NC-SA 4.0"</a> Keep Link &amp; Author if Distribute.
+        </p>
     </div>
-  
-  <div class="article-inner">
-    
-      <input type="hidden" class="isFancy" />
-    
-    
-      <header class="article-header">
+
+
+
+    <nav id="article-nav">
         
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2016/07/21/git-atom/">git-atom编辑器</a>
-    </h1>
-  
-
-      </header>
-      
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-          
-        <h1 id="Git-Atom-工具"><a href="#Git-Atom-工具" class="headerlink" title="Git Atom 工具"></a>Git Atom 工具</h1><hr>
-<p><img src="http://7xwmqr.com1.z0.glb.clouddn.com/atom.png" alt="abc"></p>
-<p>官网地址： <a href="https://atom.io/" target="_blank" rel="external">https://atom.io/</a></p>
-
-      
-    </div>
-    
-    <div class="article-info article-info-index">
-      
-      
-
-      
-    <div class="article-tag tagcloud">
-        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Hexo/">Hexo</a></li></ul>
-    </div>
-
-      
-      <div class="clearfix"></div>
-    </div>
-    
-  </div>
-  
-</article>
-
-
-
-
-
-
-
-
-
-  
-    <article id="post-hexo-command" class="article article-type-post" itemscope itemprop="blogPost">
-  
-    <div class="article-meta">
-      <a href="/2016/07/21/hexo-command/" class="article-date">
-      <time datetime="2016-07-21T08:19:10.000Z" itemprop="datePublished">2016-07-21</time>
-</a>
-
-
-    </div>
-  
-  <div class="article-inner">
-    
-      <input type="hidden" class="isFancy" />
-    
-    
-      <header class="article-header">
+            <div id="article-nav-newer" class="article-nav-title">
+                <a href="/2016/07/21/hexo-theme/">
+                    hexo官网地址
+                </a>
+            </div>
         
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2016/07/21/hexo-command/">hexo常用命令</a>
-    </h1>
-  
+        
+            <div id="article-nav-older" class="article-nav-title">
+                <a href="/2016/07/21/git-atom/">
+                    git-atom编辑器
+                </a>
+            </div>
+        
+    </nav>
 
-      </header>
-      
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-          
-        <h1 id="Hexo-常用命令"><a href="#Hexo-常用命令" class="headerlink" title="Hexo 常用命令"></a>Hexo 常用命令</h1><hr>
-<blockquote>
-<ul>
-<li>创建一个新的工程</li>
-</ul>
-</blockquote>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"MyNewPost"</span></div></pre></td></tr></table></figure>
-<blockquote>
-<ul>
-<li>运行服务器</li>
-</ul>
-</blockquote>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo s</div></pre></td></tr></table></figure>
-<blockquote>
-<ul>
-<li>产生静态文件</li>
-</ul>
-</blockquote>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div></pre></td></tr></table></figure>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo g</div></pre></td></tr></table></figure>
-<blockquote>
-<ul>
-<li>部署到远程站点</li>
-</ul>
-</blockquote>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo d</div></pre></td></tr></table></figure>
-
-      
-    </div>
-    
-    <div class="article-info article-info-index">
-      
-      
-
-      
-      
-      <div class="clearfix"></div>
-    </div>
-    
-  </div>
   
 </article>
 
+    <div id="toc" class="toc-article">
+        <strong class="toc-title">Contents</strong>
+        
+            <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Hexo-图片路径问题"><span class="toc-number">1.</span> <span class="toc-text">Hexo 图片路径问题</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#1-本地资源方式"><span class="toc-number">1.1.</span> <span class="toc-text">1.本地资源方式</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-远程资源方式"><span class="toc-number">1.2.</span> <span class="toc-text">2.远程资源方式</span></a></li></ol></li></ol>
+        
+    </div>
+    <style>
+        .left-col .switch-btn,
+        .left-col .switch-area {
+            display: none;
+        }
+        .toc-level-3 i,
+        .toc-level-3 ol {
+            display: none !important;
+        }
+    </style>
+
+    <input type="button" id="tocButton" value="Hide"  title="Show or Hide Table of Contents">
+
+    <script>
+        yiliaConfig.toc = ["Hide", "Show", !!"false"];
+    </script>
+
+
+
+    
+<div class="share">
+    
+        <div class="bdsharebuttonbox">
+            <a href="#" class="fa fa-twitter bds_twi" data-cmd="twi" title="分享到推特"></a>
+            <a href="#" class="fa fa-weibo bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a>
+            <a href="#" class="fa fa-qq bds_sqq" data-cmd="sqq" title="分享给 QQ 好友"></a>
+            <a href="#" class="fa fa-files-o bds_copy" data-cmd="copy" title="复制网址"></a>
+            <a href="#" class="fa fa fa-envelope-o bds_mail" data-cmd="mail" title="通过邮件分享"></a>
+            <a href="#" class="fa fa-weixin bds_weixin" data-cmd="weixin" title="生成文章二维码"></a>
+            <a href="#" class="fa fa-share-alt bds_more" data-cmd="more"></i></a>
+        </div>
+        <script>
+            window._bd_share_config={
+                "common":{"bdSnsKey":{},"bdText":"hexo图片存储　| Hexo　","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"0","bdSize":"24"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];
+        </script>
+    
+
+    
+</div>
 
 
 
@@ -612,9 +414,35 @@
 
 
 
+    
 
-  
-  
+
+
+
+    <div class="scroll" id="post-nav-button">
+        
+            <a href="/2016/07/21/hexo-theme/" title="Pre: hexo官网地址">
+                <i class="fa fa-angle-left"></i>
+            </a>
+        
+
+        <a title="Mini Archives"><i class="fa fa-bars"></i><i class="fa fa-times"></i></a>
+
+        
+            <a href="/2016/07/21/git-atom/" title="Next: git-atom编辑器">
+                <i class="fa fa-angle-right"></i>
+            </a>
+        
+    </div>
+
+    <ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2016/07/22/window10-crash/">window10经常崩溃的问题</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/07/21/hexo-theme/">hexo官网地址</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/07/21/hexo-image/">hexo图片存储</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/07/21/git-atom/">git-atom编辑器</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/07/21/hexo-command/">hexo常用命令</a></li></ul>
+
+
+
+
+    <script>
+        
+    </script>
 </div>
       <footer id="footer">
     <div class="outer">
