@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  
+  
+    
+    <entry>
+      <title><![CDATA[搬瓦工优惠码]]></title>
+      <url>http://yoursite.com/2016/07/22/article-1/</url>
+      <content type="html"><![CDATA[<h1 id="搬瓦工优惠码"><a href="#搬瓦工优惠码" class="headerlink" title="搬瓦工优惠码"></a>搬瓦工优惠码</h1><hr>
+<p>网址： <a href="http://www.bandwagonhost.com/" target="_blank" rel="external">http://www.bandwagonhost.com/</a></p>
+<p>优惠码：</p>
+<blockquote>
+<ul>
+<li>IAMSMART5SS6ML 优惠4.72%</li>
+<li>IAMSMART52J3NC 优惠4.79%</li>
+</ul>
+</blockquote>
+<p>优惠码会经常变动，相同的优惠码，过一段时间折扣可能都不同，这是2016/7/22日的优惠码。</p>
+]]></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[window10经常崩溃的问题]]></title>
+      <url>http://yoursite.com/2016/07/22/window10-crash/</url>
+      <content type="html"><![CDATA[<h1 id="window10经常崩溃的问题"><a href="#window10经常崩溃的问题" class="headerlink" title="window10经常崩溃的问题"></a>window10经常崩溃的问题</h1><hr>
+<p>公司的电脑不小心升级了window10，用了几个月，除了发现在web开发时，80端口被window10占用外，也没啥问题。但这几天，不知道是装了什么不兼容软件，还是window10自己更新的问题，每天早晨开机，window10资源管理器都莫名其妙的崩溃，按网上的说法，更新了最新的驱动程序（声卡 显卡 主板等等），删除了最近安装的软件，甚至以前安装的软件，还是不行，重启几次，莫名奇妙又好了，但第二天开机，同样的问题又发生了，之后又baidu了一下，解决问题过程如下：</p>
+<a id="more"></a>
+<h4 id="1、先杀毒（我的电脑没问题，排除）"><a href="#1、先杀毒（我的电脑没问题，排除）" class="headerlink" title="1、先杀毒（我的电脑没问题，排除）"></a>1、先杀毒（我的电脑没问题，排除）</h4><h4 id="2、更新电脑驱动程序，我用的360驱动大师（都更新了，依旧崩溃，排除）"><a href="#2、更新电脑驱动程序，我用的360驱动大师（都更新了，依旧崩溃，排除）" class="headerlink" title="2、更新电脑驱动程序，我用的360驱动大师（都更新了，依旧崩溃，排除）"></a>2、更新电脑驱动程序，我用的360驱动大师（都更新了，依旧崩溃，排除）</h4><h4 id="3、卸载最近安装的软件，逐一排除软件冲突（最近的软件都卸载了，还是崩溃，排除此法）"><a href="#3、卸载最近安装的软件，逐一排除软件冲突（最近的软件都卸载了，还是崩溃，排除此法）" class="headerlink" title="3、卸载最近安装的软件，逐一排除软件冲突（最近的软件都卸载了，还是崩溃，排除此法）"></a>3、卸载最近安装的软件，逐一排除软件冲突（最近的软件都卸载了，还是崩溃，排除此法）</h4><h4 id="4、这个是最终解决我的window10崩溃的方法："><a href="#4、这个是最终解决我的window10崩溃的方法：" class="headerlink" title="4、这个是最终解决我的window10崩溃的方法："></a>4、这个是最终解决我的window10崩溃的方法：</h4><blockquote>
+<ul>
+<li><p>快捷键win+r,输入cmd<br><img src="http://7xwmqr.com1.z0.glb.clouddn.com/cm.png" alt=""></p>
+</li>
+<li><p>回车，打开window命令行界面,之后会用到<br><img src="http://7xwmqr.com1.z0.glb.clouddn.com/order.png" alt=""></p>
+</li>
+<li><p>再打开任务管理器（快捷键Ctrl+Alt+Delete），“进程”下面的“windows资源管理器”右键选择重新启动，记录发生的时间</p>
+</li>
+<li><p>鼠标右键点击“我的电脑”，选”管理“”</p>
+</li>
+<li><p>管理工具-事件查看器，看“应用程序”和“系统”这两项对应的故障点<br><img src="http://7xwmqr.com1.z0.glb.clouddn.com/overlay.png" alt=""></p>
+</li>
+<li><p>从报错的信息查看到是explorer.exe引用了该DLL。可以先干掉引用该DLL的进程，然后再删除。所以先在任务管理器杀explorer.exe进程<br><img src="http://7xwmqr.com1.z0.glb.clouddn.com/explorer.png" alt=""></p>
+</li>
+<li><p>在命令控制台（cd C:\Users\gln\AppData\Roaming, (ps:gln是我的电脑用户名，相应替换成你自己的电脑用户名)<br><img src="http://7xwmqr.com1.z0.glb.clouddn.com/roaming.png" alt=""></p>
+</li>
+<li><p>执行命令del overlayicon64.dll 删除该文件<br><img src="http://7xwmqr.com1.z0.glb.clouddn.com/delover.png" alt=""></p>
+</li>
+<li><p>重启系统，window10就不崩溃了。</p>
+</li>
+</ul>
+</blockquote>
+]]></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[hexo官网地址]]></title>
+      <url>http://yoursite.com/2016/07/21/hexo-theme/</url>
+      <content type="html"><![CDATA[<h2 id="hexo官网地址"><a href="#hexo官网地址" class="headerlink" title="hexo官网地址"></a>hexo官网地址</h2><p><a href="https://hexo.io/" target="_blank" rel="external">https://hexo.io/</a></p>
+]]></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[hexo图片存储]]></title>
+      <url>http://yoursite.com/2016/07/21/hexo-image/</url>
+      <content type="html"><![CDATA[<h1 id="Hexo-图片路径问题"><a href="#Hexo-图片路径问题" class="headerlink" title="Hexo 图片路径问题"></a>Hexo 图片路径问题</h1><hr>
+<h2 id="1-本地资源方式"><a href="#1-本地资源方式" class="headerlink" title="1.本地资源方式"></a>1.本地资源方式</h2><p>资源（Asset）代表 source 文件夹中除了文章以外的所有文件，例如图片、CSS、JS 文件等。Hexo 提供了一种更方便管理 Asset 的设定：post_asset_folder。</p>
+<p>post_asset_folder: true<br>当您设置 post_asset_folder 参数后，在建立文件时，Hexo 会自动建立一个与文章同名的文件夹，您可以把与该文章相关的所有资源都放到那个文件夹，如此一来，您便可以更方便的使用资源。</p>
+<p>标签插件<br>Hexo 3.0 新增了几个插件，让您更方便的在文章内引用资源。</p>
+
+
+
+<h2 id="2-远程资源方式"><a href="#2-远程资源方式" class="headerlink" title="2.远程资源方式"></a>2.远程资源方式</h2><a id="more"></a>
+<p>七牛（10G免费空间）<br>简化步骤如下：<br><br>注册地址：<a href="https://portal.qiniu.com/signup" target="_blank" rel="external">https://portal.qiniu.com/signup</a><br>邮箱注册成功，验证后登陆，如图<br><img src="http://7xwmqr.com1.z0.glb.clouddn.com/hexo-7n1.png" alt=""><br>选择旧版本,访问到账户的首页如下。<br><img src="http://7xwmqr.com1.z0.glb.clouddn.com/hexo-7n2.png" alt=""><br>点击“新建空间”,按流程创建空间<br><br><img src="http://7xwmqr.com1.z0.glb.clouddn.com/hexo-7n3.png" alt=""><br><br>创建空间成功后跳转至空间首页。<br><img src="http://7xwmqr.com1.z0.glb.clouddn.com/7n4.png" alt=""><br>上传图片资源，点击内容管理<br><img src="http://7xwmqr.com1.z0.glb.clouddn.com/7n5.png" alt=""><br>空间首页提示现在还没有文件，点击上传按钮，上传文件<br><img src="http://7xwmqr.com1.z0.glb.clouddn.com/7n6.png" alt=""><br>上传成功后，点击图片名，右侧就可以显示图片url地址<br><img src="http://7xwmqr.com1.z0.glb.clouddn.com/7n7.png" alt=""></p>
+]]></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[git-atom编辑器]]></title>
+      <url>http://yoursite.com/2016/07/21/git-atom/</url>
+      <content type="html"><![CDATA[<h1 id="Git-Atom-工具"><a href="#Git-Atom-工具" class="headerlink" title="Git Atom 工具"></a>Git Atom 工具</h1><hr>
+<p><img src="http://7xwmqr.com1.z0.glb.clouddn.com/atom.png" alt="abc"></p>
+<p>官网地址： <a href="https://atom.io/" target="_blank" rel="external">https://atom.io/</a></p>
+]]></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[hexo常用命令]]></title>
+      <url>http://yoursite.com/2016/07/21/hexo-command/</url>
+      <content type="html"><![CDATA[<h1 id="Hexo-常用命令"><a href="#Hexo-常用命令" class="headerlink" title="Hexo 常用命令"></a>Hexo 常用命令</h1><hr>
+<blockquote>
+<ul>
+<li>创建一个新的工程</li>
+</ul>
+</blockquote>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"MyNewPost"</span></div></pre></td></tr></table></figure>
+<blockquote>
+<ul>
+<li>运行服务器</li>
+</ul>
+</blockquote>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo s</div></pre></td></tr></table></figure>
+<blockquote>
+<ul>
+<li>产生静态文件</li>
+</ul>
+</blockquote>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo g</div></pre></td></tr></table></figure>
+<a id="more"></a>
+<blockquote>
+<ul>
+<li>部署到远程站点</li>
+</ul>
+</blockquote>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo d</div></pre></td></tr></table></figure>
+]]></content>
+    </entry>
+    
+  
+  
+</search>
