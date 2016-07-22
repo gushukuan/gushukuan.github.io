@@ -357,31 +357,9 @@
     <div class="article-entry" itemprop="articleBody">
       
           
-        <h1 id="window10经常崩溃的问题"><a href="#window10经常崩溃的问题" class="headerlink" title="window10经常崩溃的问题"></a>window10经常崩溃的问题</h1><hr>
+              <h1 id="window10经常崩溃的问题"><a href="#window10经常崩溃的问题" class="headerlink" title="window10经常崩溃的问题"></a>window10经常崩溃的问题</h1><hr>
 <p>公司的电脑不小心升级了window10，用了几个月，除了发现在web开发时，80端口被window10占用外，也没啥问题。但这几天，不知道是装了什么不兼容软件，还是window10自己更新的问题，每天早晨开机，window10资源管理器都莫名其妙的崩溃，按网上的说法，更新了最新的驱动程序（声卡 显卡 主板等等），删除了最近安装的软件，甚至以前安装的软件，还是不行，重启几次，莫名奇妙又好了，但第二天开机，同样的问题又发生了，之后又baidu了一下，解决问题过程如下：</p>
-<h4 id="1、先杀毒（我的电脑没问题，排除）"><a href="#1、先杀毒（我的电脑没问题，排除）" class="headerlink" title="1、先杀毒（我的电脑没问题，排除）"></a>1、先杀毒（我的电脑没问题，排除）</h4><h4 id="2、更新电脑驱动程序，我用的360驱动大师（都更新了，依旧崩溃，排除）"><a href="#2、更新电脑驱动程序，我用的360驱动大师（都更新了，依旧崩溃，排除）" class="headerlink" title="2、更新电脑驱动程序，我用的360驱动大师（都更新了，依旧崩溃，排除）"></a>2、更新电脑驱动程序，我用的360驱动大师（都更新了，依旧崩溃，排除）</h4><h4 id="3、卸载最近安装的软件，逐一排除软件冲突（最近的软件都卸载了，还是崩溃，排除此法）"><a href="#3、卸载最近安装的软件，逐一排除软件冲突（最近的软件都卸载了，还是崩溃，排除此法）" class="headerlink" title="3、卸载最近安装的软件，逐一排除软件冲突（最近的软件都卸载了，还是崩溃，排除此法）"></a>3、卸载最近安装的软件，逐一排除软件冲突（最近的软件都卸载了，还是崩溃，排除此法）</h4><h4 id="4、这个是最终解决我的window10崩溃的方法："><a href="#4、这个是最终解决我的window10崩溃的方法：" class="headerlink" title="4、这个是最终解决我的window10崩溃的方法："></a>4、这个是最终解决我的window10崩溃的方法：</h4><blockquote>
-<ul>
-<li><p>快捷键win+r,输入cmd<br><img src="http://7xwmqr.com1.z0.glb.clouddn.com/cm.png" alt=""></p>
-</li>
-<li><p>回车，打开window命令行界面,之后会用到<br><img src="http://7xwmqr.com1.z0.glb.clouddn.com/order.png" alt=""></p>
-</li>
-<li><p>再打开任务管理器（快捷键Ctrl+Alt+Delete），“进程”下面的“windows资源管理器”右键选择重新启动，记录发生的时间</p>
-</li>
-<li><p>鼠标右键点击“我的电脑”，选”管理“”</p>
-</li>
-<li><p>管理工具-事件查看器，看“应用程序”和“系统”这两项对应的故障点<br><img src="http://7xwmqr.com1.z0.glb.clouddn.com/overlay.png" alt=""></p>
-</li>
-<li><p>从报错的信息查看到是explorer.exe引用了该DLL。可以先干掉引用该DLL的进程，然后再删除。所以先在任务管理器杀explorer.exe进程<br><img src="http://7xwmqr.com1.z0.glb.clouddn.com/explorer.png" alt=""></p>
-</li>
-<li><p>在命令控制台（cd C:\Users\gln\AppData\Roaming, (ps:gln是我的电脑用户名，相应替换成你自己的电脑用户名)<br><img src="http://7xwmqr.com1.z0.glb.clouddn.com/roaming.png" alt=""></p>
-</li>
-<li><p>执行命令del overlayicon64.dll 删除该文件<br><img src="http://7xwmqr.com1.z0.glb.clouddn.com/delover.png" alt=""></p>
-</li>
-<li><p>重启系统，window10就不崩溃了。</p>
-</li>
-</ul>
-</blockquote>
-
+          
       
     </div>
     
@@ -394,6 +372,10 @@
         <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Window10/">Window10</a></li></ul>
     </div>
 
+      
+        <p class="article-more-link">
+          <a href="/2016/07/22/window10-crash/#more">more >></a>
+        </p>
       
       <div class="clearfix"></div>
     </div>
